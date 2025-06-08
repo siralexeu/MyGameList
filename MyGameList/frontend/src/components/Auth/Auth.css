@@ -1,0 +1,56 @@
+.auth-container {
+  max-width: 300px;        
+  margin: 80px auto;       
+  padding: 30px;
+  background-color: #444;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #060606;
+  border-radius: 4px;
+  background-color: #555;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.auth-container button {
+  background-color: #9614d0;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+  background-color: #6b0078;
+}
+
+.auth-container .error {
+  color: #f8d7da;
+  margin-bottom: 15px;
+}
+
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #060606; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #555;
+  color: #fff;
+}
