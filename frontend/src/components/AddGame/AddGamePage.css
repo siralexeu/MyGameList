@@ -1,0 +1,75 @@
+.add-game-container {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  margin: 20px auto; 
+  color: #eee;
+  position: relative;
+}
+
+.add-game-container h2 {
+  color: #eee;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-game-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.add-game-container select,
+.add-game-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background-color: #555;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.add-game-container button {
+  background-color: #9614d0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-game-container button:hover {
+  background-color: #6b0078;
+}
+
+.add-game-container p {
+  margin-top: 20px;
+  color: #bbb;
+  text-align: center;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 20px;              
+}
+
+.edit-button {
+  background-color: #ff9d00;   
+  color: #fff;                 
+ padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #ff7a00;   
+}

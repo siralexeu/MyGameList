@@ -1,0 +1,60 @@
+.app-header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100; 
+
+  box-sizing: border-box;
+}
+
+.app-header .nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.app-header .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.app-header .nav-links li a:hover {
+  color: #8ab4f8;
+}
+
+.app-header .auth-buttons a,
+.app-header .auth-buttons button {
+  background-color: #444;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.app-header .auth-buttons button {
+  background-color: #9614d0;
+}
+
+.app-header .auth-buttons a:hover,
+.app-header .auth-buttons button:hover {
+  background-color: #6b0078;
+}
