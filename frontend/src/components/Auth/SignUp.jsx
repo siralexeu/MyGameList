@@ -6,7 +6,6 @@ function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate(); 
-  const API_URL = process.env.REACT_APP_API_URL || '';
 
   const handleSubmit = async (e) => {
     e.preventDefault();

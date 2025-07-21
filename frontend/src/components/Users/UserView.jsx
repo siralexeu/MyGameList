@@ -11,7 +11,6 @@ function UserView() {
 
   // const isAuthenticated = JSON.parse(localStorage.getItem('isAuthenticated'));
   const navigate = useNavigate();
-  const API_URL = process.env.REACT_APP_API_URL || '';
   
   const statusDisplay = {
   'playing': 'Playing',
@@ -54,7 +53,7 @@ const formatStatus = (status) => {
       }
     };
     load();
-  }, [userId, API_URL]);
+  }, [userId]);
 
   // search effect
   useEffect(() => {

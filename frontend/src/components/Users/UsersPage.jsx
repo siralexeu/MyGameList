@@ -6,7 +6,6 @@ function UsersPage() {
   const [displayedUsers, setDisplayedUsers] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
-  const API_URL = process.env.REACT_APP_API_URL || '';
 
   useEffect(() => {
     const load = async () => {
@@ -22,7 +21,7 @@ function UsersPage() {
       }
     };
     load();
-  }, [API_URL]);
+  }, []);
 
   useEffect(() => {
     if (!searchTerm) {

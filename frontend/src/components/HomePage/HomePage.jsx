@@ -8,7 +8,6 @@ function HomePage({ isAuthenticated }) {
   const [selectedGame, setSelectedGame] = useState(null); 
   const navigate = useNavigate();
   const [sortOrder, setSortOrder] = useState('asc');
-  const API_URL = process.env.REACT_APP_API_URL || '';
 
   useEffect(() => {
     // Load games
@@ -28,7 +27,7 @@ function HomePage({ isAuthenticated }) {
       }
     };
     loadGames();
-  }, [API_URL]);
+  }, []);
 
   useEffect(() => {
     if (searchTerm === '') {

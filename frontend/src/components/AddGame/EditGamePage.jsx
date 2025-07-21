@@ -12,7 +12,6 @@ function EditGamePage() {
   const { gameId } = useParams();
   const location = useLocation();
   const gameData = location.state?.gameData;
-  const API_URL = process.env.REACT_APP_API_URL || '';
 
   useEffect(() => {
     if (!gameData) {
@@ -23,7 +22,7 @@ function EditGamePage() {
       setRating(gameData.rating || '');
       setNotes(gameData.notes || '');
     }
-  }, [gameData, navigate], [API_URL]);
+  }, [gameData, navigate], []);
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');

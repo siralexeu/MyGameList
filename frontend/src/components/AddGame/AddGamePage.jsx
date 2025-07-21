@@ -10,7 +10,6 @@ function AddGamePage() {
   const [userId, setUserId] = useState(null); // State pentru a stoca userId
   const navigate = useNavigate();
   const { gameName } = useParams();
-  const API_URL = process.env.REACT_APP_API_URL || '';
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');

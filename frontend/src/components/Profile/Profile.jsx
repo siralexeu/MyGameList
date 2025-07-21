@@ -11,7 +11,6 @@ function Profile({ handleLogout }) {
   const [platformFilter, setPlatformFilter] = useState('all');
   const location = useLocation();
   const navigate = useNavigate();
-  const API_URL = process.env.REACT_APP_API_URL || '';
   const platformDisplay = {
   'pc': 'PC',
   'ps5': 'PS5',
@@ -75,7 +74,7 @@ const formatStatus = (status) => {
     };
 
     fetchProfileData();
-  }, [location, handleLogout, navigate, API_URL]); 
+  }, [location, handleLogout, navigate ]); 
 
   useEffect(() => {
   let filteredGames = [...userGames];
