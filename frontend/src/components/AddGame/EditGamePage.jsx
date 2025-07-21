@@ -53,7 +53,7 @@ function EditGamePage() {
     }
 
     try {
-      const response = await fetch(`${API_URL}/api/update-user-game/${userId}/${gameId}`, {
+      const response = await fetch(`/api/update-user-game/${userId}/${gameId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

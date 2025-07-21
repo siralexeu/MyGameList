@@ -46,7 +46,7 @@ const formatStatus = (status) => {
 
         try {
           // Modifică URL-ul - FOLOSEȘTE userId CA PARAMETRU MOMENTAN
-          const response = await fetch(`${API_URL}/api/user-games/${userId}`, {
+          const response = await fetch(`/api/user-games/${userId}`, {
             headers: {
               'Authorization': `Bearer ${storedToken}` // Adaugă token-ul în antet
             }
@@ -124,7 +124,7 @@ if (statusFilter !== 'all') {
         const userId = JSON.parse(storedUser).id; 
 
         try {
-          const response = await fetch(`${API_URL}/api/delete-user-game/${userId}/${gameId}`, { 
+          const response = await fetch(`/api/delete-user-game/${userId}/${gameId}`, { 
             method: 'DELETE',
             headers: {
               'Authorization': `Bearer ${storedToken}` // Adaugă token-ul în antet

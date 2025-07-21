@@ -11,7 +11,7 @@ function UsersPage() {
   useEffect(() => {
     const load = async () => {
       try {
-        const res = await fetch(`${API_URL}/api/users`);
+        const res = await fetch(`/api/users`);
         if (res.ok) {
           const data = await res.json();
           setUsers(data);

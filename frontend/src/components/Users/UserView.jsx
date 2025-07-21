@@ -37,13 +37,13 @@ const formatStatus = (status) => {
     const load = async () => {
       try {
         // get all users and find this one
-        let res = await fetch(`${API_URL}/api/users`);
+        let res = await fetch(`/api/users`);
         let all = await res.json();
         let u = all.find(x => x.id === +userId);
         setUsername(u ? u.username : '');
 
         // get this user's games
-        res = await fetch(`${API_URL}/api/user-games/${userId}`);
+        res = await fetch(`/api/user-games/${userId}`);
         if (res.ok) {
           const data = await res.json();
           setGames(data);

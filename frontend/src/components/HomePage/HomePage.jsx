@@ -14,7 +14,7 @@ function HomePage({ isAuthenticated }) {
     // Load games
     const loadGames = async () => {
       try {
-        const response = await fetch(`${API_URL}/api/games`);
+        const response = await fetch(`/api/games`);
         console.log('Response:', response);
         if (response.ok) {
           const data = await response.json();

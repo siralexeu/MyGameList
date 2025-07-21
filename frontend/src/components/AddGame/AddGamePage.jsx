@@ -45,7 +45,7 @@ function AddGamePage() {
 
     try {
       // URL-ul corect cu userId
-      const response = await fetch(`${API_URL}/api/add-to-profile/${userId}`, { 
+      const response = await fetch(`/api/add-to-profile/${userId}`, { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
