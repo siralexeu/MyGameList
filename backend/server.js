@@ -124,15 +124,14 @@ app.use('/api', userRoutes);
 
 const path = require('path');
 
-// Servește fișierele statice din folderul "build" al frontend-ului
-app.use(express.static(path.join(__dirname, 'build')));
+// Servește frontend-ul React
+app.use(express.static(path.join(__dirname, '../frontend/build')));
 
-// Route pentru toate cererile care nu sunt API
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
 });
 
 // Pornim serverul Express
 app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+  console.log(`Server running on port ${port}`);
 });
