@@ -1,0 +1,101 @@
+/* Wrapper general */
+.container {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  padding: 30px;
+  background-color: #444;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  text-align: center;
+}
+
+/* Filtre */
+.filters {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.search-input,
+.filter-select {
+  padding: 10px;
+  background-color: #555;
+  color: #fff;
+  border: 1px solid #060606;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 140px;
+  box-sizing: border-box;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-group label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.filter-select option {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Grid de jocuri */
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Fiecare joc */
+.game-item {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.game-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.game-item h3 {
+  color: #eee;
+  margin-bottom: 5px;
+}
+
+.game-item p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Butonul de Add to Profile */
+.add-to-profile-button {
+  margin-top: 10px;
+  background-color: #9614d0;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-to-profile-button:hover {
+  background-color: #6b0078;
+}
