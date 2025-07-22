@@ -1,11 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header({ isAuthenticated, handleLogout }) {
+  const location = useLocation();
+
+  // Ascunde Header-ul dacă suntem pe ruta LandingPage ("/")
+  if (location.pathname === '/') {
+    return null;
+  }
+
   return (
     <header className="app-header">
       <div className="logo">
-        {/* <Link to="/">MyGameList</Link> */}
       </div>
       <nav className="nav-links">
         <ul>
@@ -18,11 +24,6 @@ function Header({ isAuthenticated, handleLogout }) {
           <li>
             <Link to="/profile">Profile</Link>
           </li>
-          {/* {isAuthenticated && (            
-          <li>
-            <Link to="/profile">Profile</Link>
-          </li>
-          )} */}
         </ul>
       </nav>
       <div className="auth-buttons">
