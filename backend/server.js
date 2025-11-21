@@ -9,7 +9,7 @@ const userGameRoutes = require('./api/userGames');
 const userRoutes = require('./api/users');
 
 const app = express();
-const port = 5000;
+const PORT = 5000;
 const saltRounds = 10;
 
 app.use(cors());
