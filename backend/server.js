@@ -122,6 +122,11 @@ app.use('/api', gameRoutes);
 app.use('/api', userGameRoutes);
 app.use('/api', userRoutes);
 
+// Health check pentru Railway (ADAUGĂ AICI!)
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok' });
+});
+
 const path = require('path');
 
 // Servește frontend-ul React
@@ -132,6 +137,6 @@ app.get('*', (req, res) => {
 });
 
 // Pornim serverul Express
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
 });
