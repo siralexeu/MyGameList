@@ -122,7 +122,7 @@ app.use('/api', gameRoutes);
 app.use('/api', userGameRoutes);
 app.use('/api', userRoutes);
 
-// Health check pentru Railway (ADAUGĂ AICI!)
+// Health check pentru Railway
 app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
